@@ -25,6 +25,7 @@ dependencies:
     sdk: flutter
 
   cupertino_icons: ^1.0.2
+  material_design_icons_flutter: ^5.0.5955-rc.1
 
   cached_network_image: ^3.0.0
   enum_to_string: ^2.0.1
@@ -73,10 +74,10 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
+  fonts:
+    - family: Billabong
+      fonts:
+        - asset: assets/fonts/Billabong.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro

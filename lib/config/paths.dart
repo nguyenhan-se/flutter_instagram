@@ -1,3 +1,3 @@
-class Path {
+class Paths {
   static const String users = 'users';
 }

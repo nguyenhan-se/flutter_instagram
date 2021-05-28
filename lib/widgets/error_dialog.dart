@@ -18,6 +18,7 @@ class ErrorDialog extends StatelessWidget {
   CupertinoAlertDialog _showIOSDialog(BuildContext context) {
     return CupertinoAlertDialog(
       title: Text(title),
+      content: Text(content),
       actions: [
         CupertinoDialogAction(
           onPressed: () => Navigator.of(context).pop(),

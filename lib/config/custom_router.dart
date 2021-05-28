@@ -23,6 +23,16 @@ class CustomRouter {
     }
   }
 
+  static Route onGenerateNestedRoute(RouteSettings settings) {
+    print('Nested route ${settings.name}');
+    switch (settings.name) {
+      case EditProfileScreen.routeName:
+        return EditProfileScreen.route(arg: settings.arguments);
+      default:
+        return _errorRoute();
+    }
+  }
+
   static Route _errorRoute() {
     return MaterialPageRoute(
       settings: const RouteSettings(name: '/error'),
